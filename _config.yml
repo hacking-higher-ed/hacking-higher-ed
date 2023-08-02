@@ -2,6 +2,7 @@
 title: 'Hacking Higher Education'
 title_short: 'Hacking Higher Ed'
 url: https://hacking-higher-ed.github.io
+baseurl: /hacking-higher-ed/
 
 collections:
   lectures:
