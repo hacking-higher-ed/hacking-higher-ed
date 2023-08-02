@@ -1,0 +1,34 @@
+# Setup
+title: 'Hacking Higher Education'
+title_short: 'Hacking Higher Ed'
+url: https://hhe.mit.edu
+
+collections:
+  lectures:
+    output: true
+
+nav:
+
+# Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: /:title/
+future: true
+# safe: true # breaks local rendering if enabled
+timezone: America/New_York
+
+# analytics:
+#   tracking_id: ""
+
+# Excludes
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - Dockerfile
+  - docker-compose.yml

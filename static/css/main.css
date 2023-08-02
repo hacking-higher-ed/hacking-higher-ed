@@ -1,0 +1,362 @@
+/* Basic styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 13pt;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  color: #000;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+ol {
+  margin-left: 1rem;
+}
+
+li > ul {
+  padding-left: 2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: inherit;
+}
+
+ul li:before {
+  content: "\2013  "; /* note: extra space needed because first is consumed by css parser */
+  position: absolute;
+  margin-left: -1rem;
+}
+
+ul.double-spaced li {
+  margin-top: 1rem;
+}
+
+pre, code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
+    'Ubuntu Mono', Courier, monospace;
+}
+
+code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  padding: 0 0.2rem;
+  /*font-size: 0.9em;*/
+  font-size: 12pt;
+}
+
+pre {
+  color: #000;
+  margin: 1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px dashed #444;
+  /*font-size: .8rem;*/
+  font-size: 11pt;
+  overflow-x: auto;
+}
+
+pre code {
+  color: inherit;
+  background: none;
+  font-size: 100%;
+  padding: 0;
+}
+
+a {
+  color: #8a0a0a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bd0d0d;
+  transition: color 0.2s;
+}
+
+img, video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+video {
+  margin-bottom: 1rem;
+}
+
+summary {
+  outline: none;
+  user-select: none;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+blockquote {
+  padding: 0 0 0 1rem;
+  margin: 0.8rem 0;
+  color: #666;
+  border-left: 0.25rem solid #e5e5e5;
+}
+
+/* Classes */
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: -1rem;
+}
+
+.small {
+  font-size: 0.75rem;
+  padding: 0 2rem;
+}
+
+.small p {
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.gap {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.accent {
+  color: #8c0038;
+}
+
+.youtube-wrapper {
+  position: relative;
+  height: 0;
+  margin-bottom: 1rem;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.indent {
+  padding-left: 1rem;
+}
+
+.lecnote:before {
+  content: "NOTE";
+  background: #54008c;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: -1em;
+  margin-top: -1em;
+  margin-bottom: .5em;
+  margin-left: 1em;
+  padding: .5em 1em;
+}
+
+.lecnote {
+  display: none;
+  border: 1px dashed #54008c;
+  padding: 1em;
+  margin: 1rem;
+}
+
+/* Elements */
+
+#content {
+  max-width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.demo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#nav-bg {
+  margin: 0;
+  padding: 0.25rem 1rem;
+  background: #8a0a0a;
+  color: #fff;
+  border-bottom: 1px solid #400404;
+}
+
+#top-nav {
+  max-width: 45rem;
+  margin: auto;
+  text-align: center;
+}
+
+#top-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: none;
+}
+
+#top-nav a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.trigger {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ .trigger {
+  display:block;
+  margin: auto;
+}
+
+.menu-label {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
+    'Ubuntu Mono', Courier, monospace;
+  color: #ffdede;
+  padding-left: 0.5rem;
+}
+
+input[type=checkbox] ~ .menu-label:after {
+  content: "(+)";
+}
+
+input[type=checkbox]:checked ~ .menu-label:after {
+  content: "(-)";
+}
+
+.nav-link {
+  display: block;
+  color: #ffdede;
+}
+
+.trigger-child {
+  display: inline-block;
+  text-align: initial;
+}
+
+.nav-link:before {
+  content: "- ";
+}
+
+/* in terms of our fixed-width layout; if smaller than this, we want to
+ * collapse the menu */
+@media (min-width: 40rem) {
+  .menu-label {
+    display: none;
+  }
+
+  .trigger {
+    display: inline;
+    padding-top: inherit;
+  }
+
+  .trigger-child {
+    display: inline;
+    text-align: initial;
+  }
+
+  input[type=checkbox]:checked ~ .trigger {
+    display: inline;
+  }
+
+  .nav-link {
+    display: initial;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid #ffdede;
+  }
+
+  .nav-link:before {
+    content: none;
+  }
+}
+
+@media print {
+  #nav-bg, #logo, #top-nav { display: none; }
+  h1.title ~ p.center.gap.accent { display: none; }
+  .youtube-wrapper { display: none; }
+  html { font-size: 1em; font-family: sans-serif; }
+  body { background: none; }
+  #content { max-width: none; }
+  h1.title { text-align: center; }
+  h1, h2, h3, h4, h5, h6 { break-after: avoid-page; page-break-after: avoid; }
+  #content hr:last-of-type { display: none; }
+  #content pre { break-inside: avoid-page; page-break-inside: avoid; white-space: pre-wrap; }
+  #content div.small:last-of-type { display: none; }
+  a[href^="https://"]::after, a[href^="http://"]::after {
+    content: "("attr(href)")"; font-family: monospace; margin: 0 .25em;
+  }
+}
