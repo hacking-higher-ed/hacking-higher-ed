@@ -4,8 +4,7 @@ title: Hacking Higher Ed
 nositetitle: true
 subtitle: Spring 2023
 description: >
-  The first-ever course on data-centric AI. Learn how you can train better ML
-  models by improving the data.
+  If you could design a university from scratch, what would you build, and for whom?
 thumbnail: /static/assets/thumbnail.png
 ---
 
