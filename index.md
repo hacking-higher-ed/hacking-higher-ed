@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hacking Higher Education
+title: Hacking Higher Ed
 nositetitle: true
 subtitle: Spring 2023
 description: >
