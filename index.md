@@ -16,8 +16,7 @@ In this open-ended seminar, you will identify challenges faced by learners, inte
 ---
 
 <div class="small center">
-<!-- <p><a href="https://github.com/dcai-course/dcai-course">Source code</a>.</p> -->
-<p><a href="https://github.com/hacking-higher-ed/hhe-course">Source code</a>.</p>
+<p><a href="https://github.com/hacking-higher-ed/hacking-higher-ed">Source code</a>.</p>
 <p>Licensed under CC BY-NC-SA.</p>
 <p>See <a href="/license/">here</a> for contribution &amp; translation guidelines.</p>
 </div>
